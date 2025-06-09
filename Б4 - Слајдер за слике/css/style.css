@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color:#ffffb3;
+    overflow-x: hidden;
+    font-family: arial, sans-serif;
+}
+h1{
+    text-align: center;
+    color:#2aa22a;
+    padding: 20px;
+}
+
+/* -----------NAV BAR----------- */
+ul{
+    width: 100%;
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #67ff7c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+li{
+    width:20%;
+}   
+li a{
+    display: block;
+    color: #005a06;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}  
+li a:hover{
+    background-color: #1eb328;
+    color: aliceblue;
+}
+.active {
+    background-color: #005a06;
+    color: white;
+}
+li:last-child {
+    margin-right: 100px;
+}
+li:first-child {
+    margin-left: 100px;
+}
+
+/* -----------SLAJDER----------- */
+.slider-container {
+    text-align: center;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+.pikaso{
+    font-size: 40px;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    letter-spacing: 20px;
+    padding-right: 50px;
+    color: #2aa22a;
+    text-shadow: 0 0 10px;
+}
+.slajder {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.slajder img {
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1s ease-in;
+}
+.slajder img.visible {
+    opacity: 1;
+}
+.tekst {
+    background-color: #b3ffb3;
+    padding: 10px;
+    width: 300px;
+    text-align: center;
+}
+.dot {
+    height: 15px;
+    width: 15px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 5px;
+}
+.dot.active {
+    background-color: #2aa22a;
+}
+
+/* -----------FOOTER I DODATNO----------- */
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #bdbdbd;
+    text-align: center;
+    padding: 15px;
+    font-size: 16px;
+    background-color:  #2aa22a;
+    color: #ffffb3;
+}
+.aboot{
+    margin: 50px auto auto auto;
+    padding: 30px;
+    border-radius: 100px;
+    box-shadow: 5px 5px 17px 4px #000000;
+    text-align: center;
+    font-size: 20px;
+    background-color: #2aa22a;
+    width: 800px;
+}
+span{
+    font-weight: bold;
+}
