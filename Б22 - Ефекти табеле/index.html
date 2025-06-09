@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Efekti tabele</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header class="zaglavlje">
+        <h1>Zadatak 22</h1>
+        <a href="index.html" class="link-naslov">Efekti tabele</a>
+    </header>
+    <div class="naslov-stranice">
+        <h2>EFEKTI TABELE</h2>
+    </div>
+    <hr class="razdelnik">
+    <div class="sekcija-tabela">
+        <table id="tabela" class="tabela">
+            <thead class="zaglavlje-tabele">
+                <tr>
+                    <th>Rbr</th>
+                    <th>Ime</th>
+                    <th>Prezime</th>
+                    <th>Škola</th>
+                    <th>Poeni</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+    <hr class="razdelnik">
+    <div class="dugmad-kontejner">
+        <button onclick="sortiraj()" class="dugme dugme-sivo">Sortiraj</button>
+        <button onclick="obojiNeparne()" class="dugme dugme-sivo">Oboji neparne</button>
+        <button onclick="markirajPolozili()" class="dugme dugme-zeleno">Položili</button>
+        <button onclick="markirajNisuPolozili()" class="dugme dugme-crveno">Nisu položili</button>
+        <button onclick="izdvojiPolozene()" class="dugme dugme-plavo">Izdvoji one koji su položili</button>
+    </div>
+    <footer class="futer">
+        <p class="futer-tekst">Elektrotehnička škola "Nikola Tesla" Niš</p>
+        <div class="linkovi">
+          <a href="./html/uputstvo.html" class="link-futer">Uputstvo</a> 
+          <a href="./html/autor.html" class="link-futer">O autoru</a>
+        </div>
+    </footer>
+    <script src="./js/script.js"></script>
+</body>
+</html>
